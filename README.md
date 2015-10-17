@@ -62,7 +62,20 @@ Deployed SampleData modules have been selected to be installed by default. To pr
 
 ## Console Installation
 
-Use Magento CLI installation command to install Magento as usual.
+Use Magento CLI installation command to install Magento using the appropriate one of the following options:  
+If you installed the **Sample Data** using **github** and have **not installed Magento** yet, use 
+```bash
+bin/magento setup:install
+````  
+If you installed the **Sample Data** using **github** and already **have installed Magento**, use
+```
+bin/magento setup:upgrade
+```
+
+If you installed the **Sample Data** using **composer**, use
+```
+bin/magento sampledata:deploy
+```
 
 # Uninstalling
 
